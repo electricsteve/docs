@@ -4,7 +4,7 @@ You can find the offical Docker Version of LinkStack [here](https://github.com/l
 
 The docker version of LinkStack retains all the features and customization options of the [original version](https://github.com/JulianPrieber/littlelink-custom).
 
-This docker is based on [Alpine Linux](https://www.alpinelinux.org/), a Linux distribution designed to be small, simple and secure. The web server is running [Apache2](https://www.apache.org/), a free and open-source cross-platform web server software. The docker comes with [PHP 8.2](https://www.php.net/releases/8.2/en.php) for high compatibility and performance.
+This docker is based on [Alpine Linux](https://www.alpinelinux.org/), a Linux distribution designed to be small, simple and secure. The web server is running [Apache2](https://www.apache.org/), a free and open-source cross-platform web server software. The docker comes with [PHP 8.3](https://www.php.net/releases/8.3/en.php) for high compatibility and performance.
 
 ## Deployment
 The Docker Image exposes HTTP on port 80 and HTTPS on Port 443. You can modify your deployment via the following optional environment variables
@@ -86,3 +86,4 @@ volumes:
 
 ## Docker Bind Mounts
 It's also possible to run the image with [Docker Bind Mounts](https://docs.docker.com/storage/bind-mounts/) instead of [Docker Volumes](https://docs.docker.com/storage/volumes/). But you have to download the [latest release of linkstack](https://github.com/linkstackorg/linkstack/releases/latest/download/linkstack.zip) by yourself and place it in the mounted directory if you do that. Be sure to give the files the owner and group `apache` with the uid 100 and gid 101.
+
